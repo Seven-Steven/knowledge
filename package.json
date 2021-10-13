@@ -1,7 +1,7 @@
 {
   "name": "vuepress-template",
   "version": "1.0.0",
-  "description": "vuepress-template",
+  "description": "VuePress Template",
   "main": "index.js",
   "repository": "https://github.com/Seven-Steven/vuepress-template",
   "author": "seven",
