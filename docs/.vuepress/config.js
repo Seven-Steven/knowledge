@@ -82,7 +82,10 @@ module.exports = {
         modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
         cusotmMeta: () => { }
       }
-    ]
+    ],
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
+    }]
   ],
   // 默认主题配置
   themeConfig: {
