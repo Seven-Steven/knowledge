@@ -18,7 +18,8 @@
     "@vuepress/plugin-last-updated": "^1.8.2",
     "@vuepress/plugin-nprogress": "^1.8.2",
     "@vuepress/plugin-search": "^1.8.2",
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-ribbon": "^1.0.4"
   },
   "dependencies": {
     "esm": "^3.2.25",

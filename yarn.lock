@@ -7822,6 +7822,11 @@ vuepress-plugin-reading-progress@^1.0.10:
   resolved "https://registry.nlark.com/vuepress-plugin-reading-progress/download/vuepress-plugin-reading-progress-1.0.10.tgz#0b9d44e27d583ff20e0307993aa4cbda49f3bdca"
   integrity sha1-C51E4n1YP/IOAweZOqTL2knzvco=
 
+vuepress-plugin-ribbon@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.nlark.com/vuepress-plugin-ribbon/download/vuepress-plugin-ribbon-1.0.4.tgz#5a35311f76ebde1c01f0113ed24ccd5f46432bae"
+  integrity sha1-WjUxH3br3hwB8BE+0kzNX0ZDK64=
+
 vuepress-plugin-seo@^0.1.4:
   version "0.1.4"
   resolved "https://registry.nlark.com/vuepress-plugin-seo/download/vuepress-plugin-seo-0.1.4.tgz#be8e5577491c1fc317a7ad4abe3ae51ff317be1e"

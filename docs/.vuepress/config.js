@@ -21,44 +21,29 @@ module.exports = {
     'vuepress-plugin-pangu',
     'vuepress-plugin-reading-progress',
     'vuepress-plugin-img-lazy',
-    [
-      '@vuepress/last-updated',
-      {
-        transformer: (timestamp, lang) => {
-          const moment = require('moment')
-          moment.locale(lang)
-          return moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
-        }
+    ['vuepress-plugin-code-copy', {
+      align: 'top',
+      backgroundTransition: true,
+      color: '#E1DAD9',
+      backgroundColor: '#000000',
+      successText: 'copied!',
+      staticIcon: false
+    }],
+    ['vuepress-plugin-ribbon', {
+      size: 90,
+      opacity: 0.8,
+      zIndex: -1
+    }],
+    ['@vuepress/last-updated', {
+      transformer: (timestamp, lang) => {
+        const moment = require('moment')
+        moment.locale(lang)
+        return moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
       }
-    ],
-    [
-      '@vuepress/google-analytics',
-      {
-        // 'ga': 'XXXXXXX'
-      }
-    ],
-    [
-      'vuepress-plugin-code-copy',
-      {
-        align: 'top',
-        backgroundTransition: true,
-        color: '#E1DAD9',
-        backgroundColor: '#000000',
-        successText: 'copied!',
-        staticIcon: false
-      }
-    ],
-    [
-      'vuepress-plugin-zooming',
-      {
-        selector: 'img',
-        delay: 1000,
-        options: {
-          bgColor: 'black',
-          zIndex: 10000,
-        },
-      },
-    ],
+    }],
+    ['@vuepress/google-analytics', {
+      // 'ga': 'XXXXXXX'
+    }],
     // [
     //   'vuepress-plugin-sitemap',
     //   {
@@ -66,26 +51,29 @@ module.exports = {
     //     outFile: 'sitemap.xml',
     //   }
     // ],
-    [
-      'vuepress-plugin-seo',
-      {
-        siteTitle: (_, $site) => $site.title,
-        title: $page => $page.title,
-        description: $page => $page.frontmatter.description,
-        author: (_, $site) => $site.themeConfig.author,
-        tags: $page => $page.frontmatter.tags,
-        twitterCard: _ => 'summary_large_image',
-        type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
-        url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
-        image: ($page, $site) => $page.frontmatter.image && (($site.themeConfig.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image),
-        publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
-        modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
-        cusotmMeta: () => { }
-      }
-    ],
+    ['vuepress-plugin-seo', {
+      siteTitle: (_, $site) => $site.title,
+      title: $page => $page.title,
+      description: $page => $page.frontmatter.description,
+      author: (_, $site) => $site.themeConfig.author,
+      tags: $page => $page.frontmatter.tags,
+      twitterCard: _ => 'summary_large_image',
+      type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
+      url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
+      image: ($page, $site) => $page.frontmatter.image && (($site.themeConfig.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image),
+      publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
+      modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
+      cusotmMeta: () => { }
+    }],
     ['@vuepress/search', {
+      search: true,
       searchMaxSuggestions: 10
-    }]
+    }],
+    ['vuepress-plugin-cursor-effects', {
+      size: 2,
+      shape: ['star' | 'circle'],
+      zIndex: 999999999
+    }],
   ],
   // 默认主题配置
   themeConfig: {
