@@ -5,7 +5,15 @@ module.exports = {
   description: 'VuePress Template',
   // 站点头部信息
   head: [
-    ['link', { rel: 'icon', href: '/assets/images/vue.svg' }]
+    ['link', { rel: 'icon', href: '/assets/images/vue.svg' }],
+    ['link', { rel: 'manifest', href: '/assets/pwa/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/assets/images/vue.svg' }],
+    ['link', { rel: 'mask-icon', href: '/assets/images/vue.svg', color: '#3eaf7c' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/assets/images/vue.svg' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   // 部署站点的基础路径
   base: '/',
@@ -64,6 +72,10 @@ module.exports = {
       publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
       modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
       cusotmMeta: () => { }
+    }],
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: true
     }],
     ['@vuepress/search', {
       search: true,

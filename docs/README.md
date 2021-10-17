@@ -23,6 +23,12 @@ last-update 插件，可以显示文章的上次更新时间。
 - [@vuepress/plugin-search](https://vuepress.vuejs.org/zh/plugin/official/plugin-search.html)_
 基于 [Headers](https://vuepress.vuejs.org/zh/miscellaneous/glossary.html#headers) 的搜索插件。
 
+- [@vuepress/plugin-pwa](https://vuepress.vuejs.org/zh/plugin/official/plugin-pwa.html)
+PWA 插件。
+相关资源：
+  - [manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+  - [调试](https://cloud.tencent.com/developer/article/1407619)
+
 - [vuepress-plugin-seo](https://github.com/lorisleiva/vuepress-plugin-seo)
 给每一个页面添加 SEO 友好的 header 信息。
 
@@ -30,11 +36,6 @@ last-update 插件，可以显示文章的上次更新时间。
 vuepress sitemap 生成器。
 
 此插件需要在 `package.json` 文件中配置 script 脚本，详情请参考官方文档。
-
-- [vuepress-plugin-cursor-effects](https://github.com/moefyit/vuepress-plugin-cursor-effects)
-鼠标点击效果。
-
-
 ---
 
 还有一些看起来还不错但是本项目并未集成的插件：
@@ -42,9 +43,14 @@ vuepress sitemap 生成器。
 音乐播放列表。
 
 - [vuepress-plugin-ribbon](https://github.com/moefyit/vuepress-plugin-ribbon)
-彩带效果。()
+彩带效果(默认主题下兼容性有问题，网页主体会遮挡彩带)。
 
+- [vuepress-plugin-cursor-effects](https://github.com/moefyit/vuepress-plugin-cursor-effects)
+鼠标点击效果(默认主题下兼容性有问题，加载此插件会报错)。
 
 ## 相关资料
 - [VuePress 官网](https://vuepress.vuejs.org/zh/) 
   VuePress 官方网站，文档全面且详细。如果你想对 VuePress 进行更高级的使用，请阅读官方文档。
+
+- [Awesome VuePress](https://github.com/vuepress/awesome-vuepress)
+VuePress 官方收集的精选插件和主题列表。
