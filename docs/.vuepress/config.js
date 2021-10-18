@@ -73,7 +73,7 @@ module.exports = {
       modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
       cusotmMeta: () => { }
     }],
-    ['@vuepress/pwa', {
+    ['@vuepress/plugin-pwa', {
       serviceWorker: true,
       updatePopup: true
     }],
