@@ -36,6 +36,10 @@ PWA 插件。
 vuepress sitemap 生成器。
 
 此插件需要在 `package.json` 文件中配置 script 脚本，详情请参考官方文档。
+
+- [vuepress-plugin-zooming](https://vuepress-community.netlify.app/zh/plugins/zooming/)
+让你的图片支持点击缩放。
+
 ---
 
 还有一些看起来还不错但是本项目并未集成的插件：
@@ -54,3 +58,6 @@ vuepress sitemap 生成器。
 
 - [Awesome VuePress](https://github.com/vuepress/awesome-vuepress)
 VuePress 官方收集的精选插件和主题列表。
+
+- [VuePress 社区](https://vuepress-community.netlify.app/zh/)
+社区维护的 VuePress 生态系统。

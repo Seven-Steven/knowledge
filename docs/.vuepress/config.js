@@ -49,16 +49,24 @@ module.exports = {
         return moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
       }
     }],
+    ['vuepress-plugin-zooming', {
+      selector: 'img',
+      delay: 1000,
+      options: {
+        bgColor: 'black',
+        zIndex: 10000,
+      },
+    },],
     ['@vuepress/google-analytics', {
       // 'ga': 'XXXXXXX'
     }],
-    // [
-    //   'vuepress-plugin-sitemap',
-    //   {
-    //     hostname: 'https://idea.diqigan.cn',
-    //     outFile: 'sitemap.xml',
-    //   }
-    // ],
+    [
+      'vuepress-plugin-sitemap',
+      {
+        hostname: 'https://template.vuepress.diqigan.cn',
+        outFile: 'sitemap.xml',
+      }
+    ],
     ['vuepress-plugin-seo', {
       siteTitle: (_, $site) => $site.title,
       title: $page => $page.title,
@@ -80,11 +88,6 @@ module.exports = {
     ['@vuepress/search', {
       search: true,
       searchMaxSuggestions: 10
-    }],
-    ['vuepress-plugin-cursor-effects', {
-      size: 2,
-      shape: ['star' | 'circle'],
-      zIndex: 999999999
     }],
   ],
   // 默认主题配置
