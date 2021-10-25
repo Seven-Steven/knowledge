@@ -5107,6 +5107,11 @@ markdown-it-pangu@^1.0.2:
     markdown-it "^8.4.2"
     pangu "^4.0.7"
 
+markdown-it-plantuml@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.npm.taobao.org/markdown-it-plantuml/download/markdown-it-plantuml-1.4.1.tgz#3bd5e7d92eaa5c6c68eb29802f7b46a8e05ca998"
+  integrity sha1-O9Xn2S6qXGxo6ymAL3tGqOBcqZg=
+
 markdown-it-table-of-contents@^0.4.0:
   version "0.4.4"
   resolved "https://registry.npm.taobao.org/markdown-it-table-of-contents/download/markdown-it-table-of-contents-0.4.4.tgz#3dc7ce8b8fc17e5981c77cc398d1782319f37fbc"

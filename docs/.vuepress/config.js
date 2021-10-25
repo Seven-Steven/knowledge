@@ -60,13 +60,10 @@ module.exports = {
     ['@vuepress/google-analytics', {
       // 'ga': 'XXXXXXX'
     }],
-    [
-      'vuepress-plugin-sitemap',
-      {
-        hostname: 'https://template.vuepress.diqigan.cn',
-        outFile: 'sitemap.xml',
-      }
-    ],
+    ['vuepress-plugin-sitemap', {
+      hostname: 'https://template.vuepress.diqigan.cn',
+      outFile: 'sitemap.xml',
+    }],
     ['vuepress-plugin-seo', {
       siteTitle: (_, $site) => $site.title,
       title: $page => $page.title,
@@ -90,6 +87,10 @@ module.exports = {
       searchMaxSuggestions: 10
     }],
   ],
+  extendMarkdown: md => {
+    md.set({ breaks: true });
+    md.use(require('markdown-it-plantuml'));
+  },
   // 默认主题配置
   themeConfig: {
     navbar: true,

@@ -40,6 +40,13 @@ vuepress sitemap 生成器。
 - [vuepress-plugin-zooming](https://vuepress-community.netlify.app/zh/plugins/zooming/)
 让你的图片支持点击缩放。
 
+- [markdown-it-plantuml](https://github.com/gmunguia/markdown-it-plantuml)
+支持 plantuml。参考: [Vuepress 增加 PlantUML 支持](https://www.wkii.net/Tech/vuepress-add-plantUML-plugin.html)
+eg: 
+  @startuml
+  Bob -> Alice : hello
+  @enduml
+
 ---
 
 还有一些看起来还不错但是本项目并未集成的插件：
@@ -51,6 +58,12 @@ vuepress sitemap 生成器。
 
 - [vuepress-plugin-cursor-effects](https://github.com/moefyit/vuepress-plugin-cursor-effects)
 鼠标点击效果(默认主题下兼容性有问题，加载此插件会报错)。
+
+- [vuepress-plugin-flowchart](https://github.com/ulivz/vuepress-plugin-flowchart)
+vuepress 流程图插件。[相关语法](https://github.com/adrai/flowchart.js)
+
+- [vuepress-plugin-fulltext-search](https://github.com/leo-buneev/vuepress-plugin-fulltext-search)
+vuepress 全文搜索。
 
 ## 相关资料
 - [VuePress 官网](https://vuepress.vuejs.org/zh/) 
