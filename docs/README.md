@@ -47,6 +47,16 @@ eg:
   Bob -> Alice : hello
   @enduml
 
+- [vuepress-plugin-md-enhance](https://www.npmjs.com/package/vuepress-plugin-md-enhance) | [文档](https://vuepress-theme-hope.github.io/md-enhance/zh/)
+Markdown 增强插件。支持幻灯片、流程图、任务列表、Tex 语法、上下脚标、Mermaid、自定义对齐等，非常强大。
+
+- [vuepress-plugin-pangu](https://github.com/Shigma/vuepress-plugin-spacing)
+自动在中英文内容之间添加空格。
+
+- [vuepress-plugin-img-lazy](https://github.com/tolking/vuepress-plugin-img-lazy)
+支持图片懒加载。
+
+
 ---
 
 还有一些看起来还不错但是本项目并未集成的插件：

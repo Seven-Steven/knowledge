@@ -86,6 +86,13 @@ module.exports = {
       search: true,
       searchMaxSuggestions: 10
     }],
+    ['vuepress-plugin-md-enhance', {
+      enableAll: false,
+      tex: true,
+      mermaid: true,
+      flowchart: true,
+      presentation: true,
+    }]
   ],
   extendMarkdown: md => {
     md.set({ breaks: true });

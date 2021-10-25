@@ -21,6 +21,7 @@
     "@vuepress/plugin-search": "^1.8.2",
     "markdown-it-plantuml": "^1.4.1",
     "vuepress": "^1.8.2",
+    "vuepress-plugin-md-enhance": "^1.20.3",
     "vuepress-plugin-ribbon": "^1.0.4"
   },
   "dependencies": {
