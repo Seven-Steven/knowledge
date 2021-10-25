@@ -34,7 +34,6 @@ PWA 插件。
 
 - [vuepress-plugin-sitemap](https://github.com/ekoeryanto/vuepress-plugin-sitemap)
 vuepress sitemap 生成器。
-
 此插件需要在 `package.json` 文件中配置 script 脚本，详情请参考官方文档。
 
 - [vuepress-plugin-zooming](https://vuepress-community.netlify.app/zh/plugins/zooming/)
@@ -56,7 +55,6 @@ Markdown 增强插件。支持幻灯片、流程图、任务列表、Tex 语法�
 - [vuepress-plugin-img-lazy](https://github.com/tolking/vuepress-plugin-img-lazy)
 支持图片懒加载。
 
-
 ---
 
 还有一些看起来还不错但是本项目并未集成的插件：
@@ -74,6 +72,9 @@ vuepress 流程图插件。[相关语法](https://github.com/adrai/flowchart.js)
 
 - [vuepress-plugin-fulltext-search](https://github.com/leo-buneev/vuepress-plugin-fulltext-search)
 vuepress 全文搜索。
+
+- [@mr-hope/vuepress-plugin-comment2](https://www.npmjs.com/package/vuepress-plugin-comment2)
+评论插件。
 
 ## 相关资料
 - [VuePress 官网](https://vuepress.vuejs.org/zh/) 
