@@ -1,18 +1,18 @@
 module.exports = {
   // 站点标题
-  title: 'VuePress Template',
+  title: '小柒的个人知识库',
   // 站点描述
-  description: 'VuePress Template',
+  description: '小柒的个人知识库',
   // 站点头部信息
   head: [
-    ['link', { rel: 'icon', href: '/assets/images/vue.svg' }],
+    ['link', { rel: 'icon', href: '/assets/images/favicon.png' }],
     ['link', { rel: 'manifest', href: '/assets/pwa/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'apple-touch-icon', href: '/assets/images/vue.svg' }],
-    ['link', { rel: 'mask-icon', href: '/assets/images/vue.svg', color: '#3eaf7c' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/assets/images/vue.svg' }],
+    ['link', { rel: 'apple-touch-icon', href: '/assets/images/favicon.png' }],
+    ['link', { rel: 'mask-icon', href: '/assets/images/favicon.png', color: '#3eaf7c' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/assets/images/favicon.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   // 部署站点的基础路径
@@ -61,7 +61,7 @@ module.exports = {
       // 'ga': 'XXXXXXX'
     }],
     ['vuepress-plugin-sitemap', {
-      hostname: 'https://template.vuepress.diqigan.cn',
+      hostname: 'https://knowledge.diqigan.cn',
       outFile: 'sitemap.xml',
     }],
     ['vuepress-plugin-seo', {
@@ -101,7 +101,7 @@ module.exports = {
   // 默认主题配置
   themeConfig: {
     navbar: true,
-    logo: '/assets/images/vue.svg',
+    logo: '/assets/images/favicon.png',
     nav: [
       { text: 'Blog', link: 'https://blog.diqigan.cn', rel: null },
       { text: '导航', link: 'https://bookmark.diqigan.cn', rel: null }
@@ -110,7 +110,7 @@ module.exports = {
     displayAllHeaders: true,
     activeHeaderLinks: false,
     lastUpdated: '最近更新',
-    repo: 'Seven-Steven/vuepress-template',
+    repo: 'Seven-Steven/knowledge',
     repoLabel: '查看源码',
     editLinks: true,
     editLinkText: '帮助我们改善此页面！',
