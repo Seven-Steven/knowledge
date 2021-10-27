@@ -44,4 +44,4 @@ jobs:
           #这里填写Secret
           access-key-secret: ${{ secrets.ALI_OSS_ACCESS_KEY_SECRET }}
           #这个命令就是把生成的 public 文件夹的内容，传到 oss 的 Bucket 中，选择 rf 的参数直接覆盖文件，把 ${bucket_name} 替换为你的 bucket 名字
-      - run: ossutil cp -rf knowledge/.vuepress/dist oss://cn-diqigan-knowledge/%
+      - run: ossutil cp -rf knowledge/.vuepress/dist oss://cn-diqigan-knowledge/
