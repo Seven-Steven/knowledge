@@ -112,6 +112,7 @@ module.exports = {
     lastUpdated: '最近更新',
     repo: 'Seven-Steven/knowledge',
     repoLabel: '查看源码',
+    docsDir: 'knowledge',
     editLinks: true,
     editLinkText: '帮助我们改善此页面！',
     smoothScroll: true,
