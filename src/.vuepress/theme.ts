@@ -87,7 +87,7 @@ export default hopeTheme({
     //   serverURL: "https://vuepress-theme-hope-comment.vercel.app",
     // },
 
-    // Disable features you don't want here
+    // TODO MdEnhance 插件配置
     mdEnhance: {
       align: true,
       attrs: true,

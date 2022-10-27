@@ -6,8 +6,8 @@ heroImage: /assets/logo.png
 heroText: 小柒的个人知识库
 tagline: 小柒的个人知识库
 actions:
-  - text: 使用指南 💡
-    link: /demo/
+  - text: IT
+    link: /it/
     type: primary
 
   - text: 文档
