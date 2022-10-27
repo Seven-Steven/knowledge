@@ -4,32 +4,39 @@ import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://knowledge.diqigan.cn",
-
+  // 作者信息
   author: {
     name: "小柒",
     url: "https://blog.diqigan.cn",
   },
-
+  // 图标来源
   iconAssets: "iconfont",
-
   logo: "/assets/logo.png",
+  // 黑暗模式下的 LOGO
   logoDark: "/assets/logo.png",
-
+  // Github repo
   repo: "Seven-Steven/knowledge",
   // TODO
-  docsDir: "demo/theme-docs/src",
-
+  // docsDir: "demo/theme-docs/src",
+  // 文章详情页面标题下方的信息
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime", "Word", "PageView"],
+  // 自动隐藏侧边栏
+  navbarAutoHide: "mobile",
+  // 侧边栏是否显示图标
+  sidebarIcon: false,
+  // 侧边栏嵌套的标题深度
+  headerDepth: 3,
 
+  copyright: "Copyright © 2021-present <a href='https://blog.diqigan.cn' target='_blank'>Seven-Steven</a>",
+  // 多语言配置
   locales: {
     "/": {
       // navbar
       navbar: zhNavbar,
-
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: "我们终将成为自己",
 
       displayFooter: true,
 
@@ -49,8 +56,8 @@ export default hopeTheme({
 
   navbarLayout: {
     left: ["Brand"],
-    center: ["Links"],
-    right: ["Language", "Repo", "Outlook", "Search"],
+    center: [],
+    right: ["Links", "Language", "Repo", "Outlook", "Search"],
   },
 
   plugins: {
