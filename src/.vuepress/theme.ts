@@ -132,13 +132,24 @@ export default hopeTheme({
 
     pwa: {
       favicon: "/assets/logo.png",
+      // 是否缓存主页和 404 错误页之外的 HTML 文件
       cacheHTML: true,
+      // 是否缓存图片
       cachePic: true,
+      // 是否为所有绝对链接添加 base
       appendBase: true,
+      // 允许缓存的最大大小 (以 KB 为单位)
+      maxSize: 40960,
+      // 图片允许缓存的最大大小 (以 KB 为单位)
+      maxPicSize: 4096,
+      // 发现新内容时的控制逻辑
+      update: "available",
+      // 针对苹果的特殊设置
       apple: {
         icon: "/assets/logo.png",
         statusBarColor: "black",
       },
+      // 针对微软磁贴的特殊设置
       msTile: {
         image: "/assets/logo.png",
         color: "#ffffff",
@@ -187,11 +198,12 @@ export default hopeTheme({
       // 设置 feed 的最大项目数量。在所有页面排序好后，插件会截取前 count 个项目。
       count: 100,
     },
-
+    // 用户复制时添加版权信息
     copyright: {
       hostname: "https://knowledge.diqigan.cn",
       author: "小柒",
       license: "MIT",
+      // 是否全局启用
       global: true,
     }
   },
