@@ -13,12 +13,13 @@ export default hopeTheme({
   iconAssets: "iconfont",
 
   logo: "/assets/logo.png",
+  logoDark: "/assets/logo.png",
 
   repo: "Seven-Steven/knowledge",
   // TODO
   docsDir: "demo/theme-docs/src",
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime", "Word", "PageView"],
 
   locales: {
     "/": {
@@ -44,6 +45,12 @@ export default hopeTheme({
       // "/demo/encrypt.html": ["1234"],
       // "/zh/demo/encrypt.html": ["1234"],
     },
+  },
+
+  navbarLayout: {
+    left: ["Brand"],
+    center: ["Links"],
+    right: ["Language", "Repo", "Outlook", "Search"],
   },
 
   plugins: {
