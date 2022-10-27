@@ -24,7 +24,7 @@ export default defineUserConfig({
   },
   // 是否在开发服务器启动后打开浏览器。
   open: false,
+  // 主题配置
   theme,
-
   shouldPrefetch: false,
 });

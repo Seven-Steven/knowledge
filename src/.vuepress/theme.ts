@@ -175,5 +175,12 @@ export default hopeTheme({
         ],
       },
     },
+
+    copyright: {
+      hostname: "https://knowledge.diqigan.cn",
+      author: "小柒",
+      license: "MIT",
+      global: true,
+    }
   },
 });
