@@ -64,28 +64,28 @@ export default hopeTheme({
     // If you don't need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    comment: {
-      /**
-       * Using Giscus
-       */
-      // provider: "Giscus",
-      // repo: "vuepress-theme-hope/giscus-discussions",
-      // repoId: "R_kgDOG_Pt2A",
-      // category: "Announcements",
-      // categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // comment: {
+    //   /**
+    //    * Using Giscus
+    //    */
+    //   // provider: "Giscus",
+    //   // repo: "vuepress-theme-hope/giscus-discussions",
+    //   // repoId: "R_kgDOG_Pt2A",
+    //   // category: "Announcements",
+    //   // categoryId: "DIC_kwDOG_Pt2M4COD69",
 
-      /**
-       * Using Twikoo
-       */
-      // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
+    //   /**
+    //    * Using Twikoo
+    //    */
+    //   // provider: "Twikoo",
+    //   // envId: "https://twikoo.ccknbc.vercel.app",
 
-      /**
-       * Using Waline
-       */
-      provider: "Waline",
-      serverURL: "https://vuepress-theme-hope-comment.vercel.app",
-    },
+    //   /**
+    //    * Using Waline
+    //    */
+    //   provider: "Waline",
+    //   serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+    // },
 
     // Disable features you don't want here
     mdEnhance: {
@@ -174,6 +174,18 @@ export default hopeTheme({
           },
         ],
       },
+    },
+
+    // feed 插件配置
+    feed: {
+      // 是否启用 rss 格式输出
+      rss: true,
+      // 是否启用 json 格式输出
+      json: false,
+      // 是否启用 atom 格式输出
+      atom: false,
+      // 设置 feed 的最大项目数量。在所有页面排序好后，插件会截取前 count 个项目。
+      count: 100,
     },
 
     copyright: {
